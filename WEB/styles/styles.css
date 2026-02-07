@@ -1,0 +1,33 @@
+/* DOCUMENTACIÓN: Estilos Minimalistas Empresariales */
+:root {
+    --dark: #121212;
+    --gold: #b2945e;
+    --white: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: 'Montserrat', sans-serif; background-color: var(--white); }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* Header - Esto debe alinear el logo y el menú */
+.main-header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; border-bottom: 2px solid var(--gold); }
+.header-flex { display: flex; width: 100%; justify-content: space-between; align-items: center; }
+.logo h1 { font-size: 1.2rem; letter-spacing: 3px; }
+.logo span { color: var(--gold); }
+.nav-links { display: flex; list-style: none; gap: 20px; }
+.nav-links a { text-decoration: none; color: var(--dark); font-size: 0.8rem; text-transform: uppercase; }
+
+/* Hero - Si esto funciona, verás un bloque negro grande al centro */
+.hero { height: 60vh; background-color: var(--dark); color: white; display: flex; align-items: center; justify-content: center; text-align: center; }
+.hero-text h2 { font-size: 3rem; margin-bottom: 10px; font-weight: 300; }
+
+/* Botones */
+.btn { padding: 12px 30px; text-decoration: none; display: inline-block; margin: 10px; font-size: 0.7rem; letter-spacing: 2px; }
+.btn-primary { background: var(--gold); color: white; }
+.btn-outline { border: 1px solid white; color: white; }
+
+/* Grid de 3 columnas */
+.features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; padding: 60px 0; text-align: center; }
+.num { font-size: 2rem; color: var(--gold); display: block; }
