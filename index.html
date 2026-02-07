@@ -3,47 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal Fiscal - Gobierno Transparente</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Elite Spaces | Inmobiliaria Boutique</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Portal de Finanzas Públicas</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="registro.html">Registros</a></li>
-                <li><a href="reportes.html">Reportes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo"><h1>ELITE<span>SPACES</span></h1></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="pages/servicios.html">Servicios</a></li>
+                    <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section class="hero">
-            <article>
-                <h2>Transparencia en el Gasto Público</h2>
-                <p>Bienvenido al portal oficial para la consulta de presupuestos estatales e información sobre impuestos.</p>
-                <img src="assets/finanzas-gobierno.jpg" alt="Gráficos de crecimiento económico">
+            <div class="overlay"></div>
+            <img src="assets/hero-bg.jpg" alt="Propiedad de Lujo" class="hero-img">
+            <article class="hero-text">
+                <h2>La arquitectura del buen vivir.</h2>
+                <p>Propiedades exclusivas en las mejores zonas del país.</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-primary">Solicitar Información</a>
+                    <a href="pages/servicios.html" class="btn btn-outline">Ver Catálogo</a>
+                </div>
             </article>
         </section>
 
-        <section class="servicios">
-            <article>
-                <h3>Consulta de Impuestos</h3>
-                <p>Acceda a las tablas vigentes de impuestos sobre la renta y propiedad.</p>
+        <section class="container features">
+            <article class="feature-item">
+                <span class="num">01</span>
+                <h3>Exclusividad</h3>
+                <p>Propiedades seleccionadas bajo estándares de alto diseño.</p>
             </article>
+            <article class="feature-item">
+                <span class="num">02</span>
+                <h3>Transparencia</h3>
+                <p>Gestión legal integral y acompañamiento experto.</p>
+            </article>
+            <article class="feature-item">
+                <span class="num">03</span>
+                <h3>Plusvalía</h3>
+                <p>Inversiones con alto retorno estratégico.</p>
+            </article>
+        </section>
+
+        <section id="contacto" class="container contact-section">
+            <div class="contact-card">
+                <article class="contact-header">
+                    <h3>Contacto Empresarial</h3>
+                    <p>Déjanos tus datos para una asesoría personalizada.</p>
+                </article>
+
+                <form action="#" method="POST" class="form-minimal">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué inversión estás interesado?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Ministerio de Hacienda y Presupuesto - Todos los derechos reservados.</p>
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <p>&copy; 2026 Elite Spaces Inmobiliaria. Todos los derechos reservados.</p>
+        </div>
     </footer>
+
 </body>
 </html>
-<<<<<<< HEAD
-
-=======
-<!--Aqui vamos a trabajar, ustedes editan el codigo que tengan que trabajar y suben sus camios
->>>>>>> 09ab3c54fa0b8dadc350b611189ab075da39415c
