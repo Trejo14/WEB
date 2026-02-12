@@ -31,3 +31,125 @@ body { font-family: 'Montserrat', sans-serif; background-color: var(--white); }
 /* Grid de 3 columnas */
 .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; padding: 60px 0; text-align: center; }
 .num { font-size: 2rem; color: var(--gold); display: block; }
+.buy-hero {
+    height: 40vh;
+}
+
+/* Tarjetas de Propiedades */
+.property-card {
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Para que la imagen no se salga */
+}
+
+.property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-img-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: var(--dark);
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Etiquetas sobre la imagen (Venta, Preventa, etc) */
+.tag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 5px 12px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.price {
+    display: block;
+    color: var(--gold);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: var(--dark);
+}
+
+.location {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Especificaciones (Camas, Baños, m2) */
+.specs {
+    display: flex;
+    gap: 10px;
+    font-size: 0.8rem;
+    color: #555;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+/* Botón ancho completo para las tarjetas */
+.full-width {
+    display: block;
+    text-align: center;
+    margin: 0;
+}
+
+/* Sección oscura intermedia (CTA) */
+.cta-dark {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta-dark h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.cta-dark p {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+/* Ajustes del Formulario Centrado */
+.centered-card {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
