@@ -1,34 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Vender Propiedad | Elite Spaces</title>
+
+    <!-- Hace el sitio responsive para dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importación de fuentes desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Páginas de estilos css -->
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/stylesVenta.css">
 </head>
+
 <body class="venta-page">
 
+    <!-- Encabezado principal del sitio -->
     <header class="main-header">
         <div class="container header-flex">
+            
+            <!-- Logo del sitio -->
             <div class="logo">
                 <h1>ELITE<span>SPACES</span></h1>
             </div>
+
+            <!-- Menú de navegación -->
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="Compras.html">Compras</a></li>
-                    <li><a href="blog.html">Blog</a></li> 
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="#contacto" class="btn-nav">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- Contenido principal -->
     <main class="container content-grid">
+
+        <!-- Sección informativa sobre la venta de propiedades -->
         <section class="venta-info">
+
+            <!-- Texto de introducción -->
             <div class="venta-header-text">
                 <h3>¿Buscas vender tu casa?</h3>
                 <h1>¡Nosotros te ayudamos!</h1>
@@ -38,10 +56,12 @@
                 </p>
             </div>
 
+            <!-- Información de contacto -->
             <div class="contact-details">
                 <h2>Contáctanos</h2>
                 <p>Somos una inmobiliaria enfocada en propiedades exclusivas. Si deseas más información puedes comunicarte con nosotros.</p>
-                
+
+                <!-- Dirección física -->
                 <div class="info-block">
                     <h4>Dirección</h4>
                     <address>
@@ -49,12 +69,14 @@
                         Puebla, Pue., México
                     </address>
                 </div>
-                
+
+                <!-- Teléfono de contacto -->
                 <div class="info-block">
                     <h4>Teléfono</h4>
                     <p><a href="tel:+521248735272">+52 12 4873 5272</a></p>
                 </div>
 
+                <!-- Correos electrónicos -->
                 <div class="info-block">
                     <h4>Correos</h4>
                     <p><a href="mailto:ventas@elitespaces.com">ventas@elitespaces.com</a></p>
@@ -63,28 +85,37 @@
             </div>
         </section>
 
+        <!-- Contenedor del formulario de venta -->
         <section class="venta-formulario-container">
             <div class="venta-formulario">
+
+                <!-- Título del formulario -->
                 <h2>Formulario de Venta</h2>
                 <p>Llene el siguiente formulario y un asesor se pondrá en contacto con usted.</p>
-                
+
+                <!-- Formulario que envía datos al servidor -->
                 <form action="enviar_venta.php" method="POST">
                     <fieldset>
+                        
+                        <!-- Nombre completo -->
                         <div class="form-group">
                             <label for="nombre">Nombre completo</label>
                             <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
                         </div>
 
+                        <!-- Correo electrónico -->
                         <div class="form-group">
                             <label for="email">Correo Electrónico</label>
                             <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
                         </div>
 
+                        <!-- Teléfono -->
                         <div class="form-group">
                             <label for="telefono">Teléfono</label>
                             <input type="tel" id="telefono" name="telefono" placeholder="+52 55 5555 5555" required>
                         </div>
 
+                        <!-- Tipo de propiedad -->
                         <div class="form-group">
                             <label>Tipo de propiedad</label>
                             <div class="radio-group">
@@ -95,11 +126,13 @@
                             </div>
                         </div>
 
+                        <!-- Detalles de la propiedad -->
                         <div class="form-group">
                             <label for="detalles">Detalles de la propiedad</label>
                             <textarea id="detalles" name="detalles" rows="5" placeholder="Habitaciones, m2, etc." required></textarea>
                         </div>
 
+                        <!-- Dirección -->
                         <div class="address-grid">
                             <div class="form-group">
                                 <label for="calle">Calle</label>
@@ -115,6 +148,7 @@
                             </div>
                         </div>
 
+                        <!-- Ciudad -->
                         <div class="form-group">
                             <label for="ciudad">Ciudad</label>
                             <select id="ciudad" name="ciudad" required>
@@ -125,21 +159,25 @@
                             </select>
                         </div>
 
+                        <!-- Precio de venta -->
                         <div class="form-group">
                             <label for="precio">Precio de Venta (USD)</label>
                             <input type="number" id="precio" name="precio" placeholder="$0.00" required>
                         </div>
 
+                        <!-- Botones del formulario -->
                         <div class="btn-group">
                             <input type="submit" value="Enviar Propiedad" class="btn-submit">
                             <input type="reset" value="Limpiar" class="btn-reset">
                         </div>
+
                     </fieldset>
                 </form>
             </div>
         </section>
     </main>
 
+    <!-- Pie de página -->
     <footer class="main-footer">
         <div class="container footer-grid">
             <p>&copy; 2026 Elite Spaces Inmobiliaria. Todos los derechos reservados.</p>
