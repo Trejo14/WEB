@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elite Spaces | Inmobiliaria Boutique</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
     <header class="main-header">
         <div class="container header-flex">
-            <div class="logo"><h1>ELITE<span>SPACES</span></h1></div>
+            <div class="logo">
+                <h1>ELITE<span>SPACES</span></h1>
+            </div>
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">Inicio</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="Compras.html">Compras</a></li>
-                    <li><a href="blog.html" class="active">Blog</a></li> 
-                    <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+                    <li><a href="blog.html">Blog</a></li> 
+                    <li><a href="venta.html" class="btn-nav">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,14 +29,14 @@
 
     <main>
         <section class="hero">
-            <div class="overlay"></div>
             <img src="assets/hero-bg.jpg" alt="Propiedad de Lujo" class="hero-img">
+            <div class="overlay"></div>
             <article class="hero-text">
-                <h2>La arquitectura del buen vivir.</h2>
+                <h2>La arquitectura del buen vivir.</h2> 
                 <p>Propiedades exclusivas en las mejores zonas del país.</p>
                 <div class="hero-buttons">
-                    <a href="#contacto" class="btn btn-primary">Solicitar Información</a>
-                    <a href="pages/servicios.html" class="btn btn-outline">Ver Catálogo</a>
+                    <a href="venta.html" class="btn btn-primary">Solicitar Información</a>
+                    <a href="Compras.html" class="btn btn-outline">Ver Catálogo</a>
                 </div>
             </article>
         </section>
@@ -55,32 +58,8 @@
                 <p>Inversiones con alto retorno estratégico.</p>
             </article>
         </section>
-
-        <section id="contacto" class="container contact-section">
-            <div class="contact-card">
-                <article class="contact-header">
-                    <h3>Contacto Empresarial</h3>
-                    <p>Déjanos tus datos para una asesoría personalizada.</p>
-                </article>
-
-                <form action="#" method="POST" class="form-minimal">
-                    <div class="form-group">
-                        <label for="nombre">Nombre Completo</label>
-                        <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Correo Electrónico</label>
-                        <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué inversión estás interesado?"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-                </form>
-            </div>
-        </section>
-    </main>
+        
+        </main>
 
     <footer class="main-footer">
         <div class="container footer-grid">
