@@ -1,6 +1,5 @@
 /* --- ESTILOS PÁGINA NOSOTROS --- */
 
-/* Ajustes de sección general */
 .about-section {
     padding: 80px 20px;
 }
@@ -17,7 +16,6 @@
     margin-bottom: 50px;
 }
 
-/* Layout Imagen + Texto */
 .about-content {
     display: flex;
     align-items: center;
@@ -41,10 +39,20 @@
 .about-image img {
     width: 100%;
     border-radius: 2px;
-    box-shadow: 10px 10px 0px var(--gold); /* Efecto decorativo elegante */
+    box-shadow: 10px 10px 0px var(--gold); 
 }
 
-/* Sección Oscura de Valores */
+.dark-title {
+    text-align: center;      
+    color: #ffffff;         
+    font-size: 2rem;        
+    margin-bottom: 50px;    
+    font-weight: 300;        
+    letter-spacing: 4px;     
+    text-transform: uppercase;
+}
+
+
 .values-dark {
     background-color: var(--dark);
     padding: 40px 0;
@@ -61,7 +69,7 @@
     font-size: 0.9rem;
 }
 
-/* Grid del Equipo */
+
 .team-section {
     padding: 80px 20px;
 }
@@ -77,19 +85,9 @@
     padding: 20px;
 }
 
-.img-circle {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 20px auto;
-    border: 3px solid var(--gold);
-}
-
-.img-circle img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.team-card {
+    padding: 20px;
+    margin-top: 20px; 
 }
 
 .team-card h4 {
@@ -104,4 +102,50 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
+}
+
+.organization-section {
+    padding: 60px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+
+.org-grid {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 40px;
+    text-align: center;
+}
+
+.org-card {
+    flex: 1; 
+    min-width: 250px; 
+}
+
+.org-card h3 {
+    color: #b2945e; 
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    
+    border-bottom: 2px solid #121212;
+    display: inline-block; 
+    padding-bottom: 5px;
+}
+
+.org-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.values-list {
+    list-style: none;
+    padding: 0;
+}
+
+.values-list li {
+    margin-bottom: 10px;
+    color: #555;
 }
